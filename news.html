@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>News & Posts · AH Marketing Agency</title>
+<meta name="description" content="AH Marketing Agency এর সব সোশ্যাল মিডিয়া পোস্ট আর খবর এক জায়গায়।">
+<link rel="icon" href="logo.svg"><link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Anek+Bangla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+header.s{padding-bottom:40px}.hero.s{margin-top:34px}.hero.s h1{font-size:clamp(28px,4vw,42px)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}.chips button{border:1px solid #cbd5e1;background:#fff;border-radius:99px;padding:7px 14px;font:inherit;font-size:14px;cursor:pointer}
+.chips button.on{background:var(--d);color:#fff;border-color:var(--d)}
+.feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.post{background:#fff;border:1px solid #e2e8f0;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px -16px rgba(15,23,42,.25);display:flex;flex-direction:column}
+.post img,.post iframe{width:100%;aspect-ratio:16/10;object-fit:cover;border:0;display:block;background:#e2e8f0}
+.post .b{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column}
+.post .m{font-size:12.5px;color:#64748b;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.post .m b{color:var(--p)}
+.post h3{margin:6px 0;font-size:17px;line-height:1.35}.post p{margin:0;color:#334155;font-size:14.5px;white-space:pre-line;font-family:"Anek Bangla",Poppins,sans-serif}
+.post p.cut{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.more{background:none;border:0;color:var(--p);font:inherit;font-size:14px;padding:6px 0 0;cursor:pointer;text-align:left}
+.links{margin-top:auto;padding-top:12px;display:flex;gap:8px;flex-wrap:wrap}.links a{font-size:12.5px;text-decoration:none;border:1px solid #e2e8f0;border-radius:99px;padding:4px 10px;color:#0f172a}
+.empty{color:#64748b;text-align:center;padding:40px}
+</style></head><body>
+<header class="s"><nav><a class="brand" href="index.html" style="color:#fff;text-decoration:none"><img src="logo.svg" class="lg" alt="AH Marketing logo">AH MARKETING</a><div><a href="index.html#services">Services</a><a href="news.html">News</a><a href="index.html#contact">Contact</a></div></nav>
+<div class="hero s"><div class="t"><h1>News & <span>Posts</span></h1><p class="bn">আমাদের সব সোশ্যাল মিডিয়া পোস্ট, টিপস আর খবর এক জায়গায়</p></div></div></header>
+<section><div class="chips" id="chips"></div><div class="feed" id="feed"><p class="empty">লোড হচ্ছে…</p></div></section>
+<footer>© 2026 AH Marketing Agency · <a href="index.html">Home</a> · <a href="https://itsahmarketing-boop.github.io/review/privacy.html">Privacy Policy</a></footer>
+<script>
+(function(){
+  var esc=function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});};
+  var cur=new URLSearchParams(location.search).get("page")||"", all=[];
+  function render(){
+    var list=all.filter(function(p){return !cur||p.page===cur;}), f=document.getElementById("feed");
+    if(!list.length){f.innerHTML='<p class="empty">এখনো কোনো পোস্ট নেই।</p>';return;}
+    f.innerHTML=list.map(function(p){
+      var media=p.yt?'<iframe loading="lazy" src="https://www.youtube.com/embed/'+esc(p.yt)+'" allowfullscreen></iframe>':p.img?'<img loading="lazy" src="'+esc(p.img)+'" alt="">':'';
+      var d=p.date?new Date(p.date).toLocaleDateString("bn-BD",{day:"numeric",month:"long",year:"numeric"}):"";
+      var links=(p.links||[]).map(function(l){return '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.name)+' ↗</a>';}).join("");
+      var long=String(p.text||"").length>320;
+      return '<article class="post" id="'+esc(p.id)+'">'+media+'<div class="b"><div class="m">'+(p.page?'<b>'+esc(p.page)+'</b>':'')+'<span>'+esc(d)+'</span></div>'
+        +(p.title?'<h3>'+esc(p.title)+'</h3>':'')+'<p'+(long?' class="cut"':'')+'>'+esc(p.text)+'</p>'+(long?'<button class="more" type="button">আরও পড়ুন</button>':'')
+        +(links?'<div class="links">'+links+'</div>':'')+'</div></article>';
+    }).join("");
+    f.querySelectorAll(".more").forEach(function(b){b.onclick=function(){var t=b.previousElementSibling;t.classList.toggle("cut");b.textContent=t.classList.contains("cut")?"আরও পড়ুন":"কম দেখুন";};});
+  }
+  function chips(){
+    var pages=[];all.forEach(function(p){if(p.page&&pages.indexOf(p.page)===-1)pages.push(p.page);});
+    var c=document.getElementById("chips"); if(pages.length<2){c.innerHTML="";return;}
+    c.innerHTML=['<button type="button" data-p="">সব</button>'].concat(pages.map(function(n){return '<button type="button" data-p="'+esc(n)+'">'+esc(n)+'</button>';})).join("");
+    c.querySelectorAll("button").forEach(function(b){b.classList.toggle("on",b.dataset.p===cur);b.onclick=function(){cur=b.dataset.p;chips();render();};});
+  }
+  fetch("posts.json?v="+Date.now()).then(function(r){return r.json();}).then(function(j){all=Array.isArray(j)?j:[];chips();render();})
+    .catch(function(){document.getElementById("feed").innerHTML='<p class="empty">এখনো কোনো পোস্ট নেই।</p>';});
+})();
+</script>
+</body></html>
