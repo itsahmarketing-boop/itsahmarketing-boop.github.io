@@ -25,10 +25,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
+@font-face{font-family:"UN Bangla";src:url("/fonts/UNBangla-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"UN Bangla";src:url("/fonts/UNBangla-Bold.ttf") format("truetype");font-weight:600 800;font-display:swap}
 :root{
   /* AH Marketing: letterhead navy + violet + sky. Clean white canvas, bold Bangla display type. */
   --navy:#0b1f4d;--navy2:#13306e;--violet:#6d28d9;--sky:#0ea5e9;--ink:#0f172a;--sub:#475569;--line:#e2e8f0;--bg:#ffffff;--soft:#f5f7fb;
-  --display:"Anek Bangla","Hind Siliguri",sans-serif;--body:"Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif;--latin:"Poppins",system-ui,sans-serif;
+  --display:"UN Bangla","Anek Bangla",sans-serif;--body:"UN Bangla","Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif;--latin:"Poppins",system-ui,sans-serif;
   color-scheme:light;
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}html,body{margin:0}
@@ -43,7 +45,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--sky);outline-offset
 .btn.g{background:#22a35a;color:#fff}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--latin);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--violet)}
 .eyebrow::before{content:"";width:22px;height:2px;background:currentColor}
-h1,h2,h3{font-family:var(--display);line-height:1.2;text-wrap:balance;margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.25;text-wrap:balance;margin:0}
 h2{font-size:clamp(28px,3.6vw,40px);color:var(--navy)}
 .lead{color:var(--sub);font-size:18px;max-width:640px}
 
