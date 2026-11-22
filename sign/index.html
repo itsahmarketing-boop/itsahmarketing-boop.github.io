@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>চুক্তিপত্র ও স্বাক্ষর — এ এইচ মার্কেটিং এজেন্সি</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1a365d;--violet:#7030a0;--sky:#0ea5e9;--ink:#0f172a;--sub:#475569;--line:#e2e8f0;--bg:#f5f7fb;--ok:#15803d;--bad:#b91c1c}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"Hind Siliguri",system-ui,sans-serif;font-size:16px;line-height:1.65}
+.top{background:linear-gradient(135deg,#0b1f4d,var(--navy) 60%,var(--violet));color:#fff;padding:18px 0}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+.top b{font-size:19px;display:block}.top small{color:#c7d2fe}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 10px 30px -24px rgba(15,23,42,.4)}
+h1{font-size:24px;margin:0 0 2px;color:var(--navy);text-align:center}
+h2{font-size:19px;margin:0 0 10px;color:var(--navy)}
+h3{font-size:16px;margin:16px 0 4px;color:var(--navy)}
+.c{text-align:center}.sub{color:var(--sub)}
+.doc p{margin:0 0 6px;font-size:15px}
+.doc .n{color:var(--navy);font-weight:700;margin-right:6px}
+.parties{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.parties div{border:1px solid var(--line);border-radius:12px;padding:12px;font-size:14.5px}
+.parties b{display:block;color:#fff;margin:-12px -12px 8px;padding:6px 12px;border-radius:12px 12px 0 0}
+@media(max-width:600px){.parties{grid-template-columns:1fr}}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:7px 8px;text-align:left}th{background:var(--navy);color:#fff;font-weight:600}
+td input{width:100%;border:1px solid var(--line);border-radius:6px;padding:6px;font:inherit}
+.f{display:grid;gap:4px;margin:10px 0}
+.f label{font-weight:600;font-size:15px}.f label small{font-weight:400;color:var(--sub)}
+.f input{font:inherit;padding:10px 12px;border:1px solid #cbd5e1;border-radius:10px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:600px){.row{grid-template-columns:1fr}}
+.tabs{display:flex;gap:8px;margin:8px 0}
+.tabs button{flex:1;border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:9px;font:inherit;font-weight:600;cursor:pointer}
+.tabs button.on{border-color:var(--violet);color:var(--violet);background:#faf5ff}
+.pad{border:2px dashed #94a3b8;border-radius:12px;background:#fff;position:relative;touch-action:none}
+.pad canvas{width:100%;height:190px;display:block;border-radius:12px;cursor:crosshair}
+.pad .hint{position:absolute;inset:0;display:grid;place-items:center;color:#94a3b8;pointer-events:none;font-size:15px}
+.up{border:2px dashed #94a3b8;border-radius:12px;padding:20px;text-align:center;background:#fff}
+.up img{max-height:150px;margin:10px auto 0;display:block}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:12px;padding:13px 20px;font:inherit;font-weight:700;font-size:16px;cursor:pointer;text-decoration:none}
+.btn.p{background:linear-gradient(135deg,var(--violet),var(--sky));color:#fff;width:100%}
+.btn.p:disabled{opacity:.6;cursor:wait}
+.btn.l{background:#fff;border:1.5px solid var(--line);color:var(--ink)}
+.btn.g{background:#22a35a;color:#fff}
+.small{font-size:13.5px;color:var(--sub)}
+.err{color:var(--bad);min-height:22px;font-size:14.5px;margin:6px 0}
+.ok{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:14px;padding:18px;text-align:center}
+.ok .t{width:60px;height:60px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;font-size:30px;margin:0 auto 8px}
+.chk{display:flex;gap:10px;align-items:flex-start;margin:12px 0;font-size:15px}.chk input{width:20px;height:20px;margin-top:3px;accent-color:var(--violet)}
+.sigimg{max-height:80px;display:block;margin:6px 0}
+.link{word-break:break-all;background:#f1f5f9;border-radius:8px;padding:10px;font-size:14px;margin:8px 0}
+.list td{font-size:13.5px}
+.loading{text-align:center;padding:60px 0;color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap" style="display:flex;align-items:center;gap:12px"><img src="/logo.svg" alt="" style="width:42px;height:42px;border-radius:50%;background:#fff"><div><b>এ এইচ মার্কেটিং এজেন্সি</b><small>অনলাইন চুক্তিপত্র ও স্বাক্ষর</small></div></div></div>
+<div class="wrap" id="app"><div class="loading">লোড হচ্ছে…</div></div>
+<script>
+var BOOT = { mode: "none", id: "", k: "", url: "/sign/", sections: [] };
+(function(){ var p = new URLSearchParams(location.search); if (p.get("k")) { BOOT.mode = "admin"; BOOT.k = p.get("k"); } else if (p.get("id")) { BOOT.mode = "sign"; BOOT.id = p.get("id"); } })();
+BOOT.sections = [{"h": "১. চুক্তির উদ্দেশ্য", "items": ["দ্বিতীয় পক্ষের রচিত বইসমূহ (তফসিল-ক) প্রথম পক্ষ তার নিজস্ব ওয়েবসাইট (www.itsahmarketing.com), সোশ্যাল মিডিয়া, QR কোড ও অন্যান্য অনলাইন মাধ্যমে বাংলাদেশের ভেতরে বিক্রি করবে।", "এই চুক্তি একচেটিয়া (exclusive) নয়। দ্বিতীয় পক্ষ নিজে বা অন্য প্রকাশক/বিক্রেতার মাধ্যমেও বই বিক্রি করতে পারবেন।"]}, {"h": "২. বই সরবরাহ ও মালিকানা", "items": ["দ্বিতীয় পক্ষ কনসাইনমেন্ট ভিত্তিতে প্রথম পক্ষকে বই সরবরাহ করবেন। প্রতিটি সরবরাহের সময় বইয়ের নাম ও সংখ্যা উল্লেখ করে একটি চালান তৈরি হবে এবং উভয় পক্ষ তাতে সই করবেন।", "বিক্রি না হওয়া পর্যন্ত বইয়ের মালিকানা দ্বিতীয় পক্ষের থাকবে।", "প্রথম পক্ষের হেফাজতে থাকা অবস্থায় কোনো বই হারিয়ে গেলে বা নষ্ট হলে প্রথম পক্ষ সেই বইয়ের খুচরা মূল্য থেকে কমিশন বাদ দিয়ে বাকি টাকা দ্বিতীয় পক্ষকে পরিশোধ করবে। তবে প্রাকৃতিক দুর্যোগ বা নিয়ন্ত্রণের বাইরের ঘটনায় এই দায় প্রযোজ্য হবে না।"]}, {"h": "৩. বইয়ের মূল্য", "items": ["প্রতিটি বইয়ের খুচরা মূল্য দ্বিতীয় পক্ষ নির্ধারণ করবেন (তফসিল-ক)। প্রথম পক্ষ এর বেশি দামে বিক্রি করবে না।", "কোনো ছাড়, অফার বা কুপন দিতে হলে উভয় পক্ষের লিখিত সম্মতি (হোয়াটসঅ্যাপ বা ইমেইল যথেষ্ট) লাগবে। ছাড়ের টাকা কোন পক্ষ কতটুকু বহন করবে, তা সম্মতির সময় ঠিক করা হবে।"]}, {"h": "৪. কমিশন", "items": ["প্রতিটি বিক্রিত বইয়ের প্রকৃত বিক্রয়মূল্যের **{{C}}%** প্রথম পক্ষের কমিশন হিসেবে গণ্য হবে। বাকি **{{R}}%** দ্বিতীয় পক্ষ পাবেন।", "কাস্টমারের দেওয়া ডেলিভারি চার্জ কমিশনের হিসাবের বাইরে থাকবে এবং তা কুরিয়ার খরচ পরিশোধে ব্যবহৃত হবে।", "ওয়েবসাইট ও অর্ডার ব্যবস্থাপনা, পেমেন্ট গ্রহণের চার্জ (বিকাশ/গেটওয়ে), প্যাকেজিং, কাস্টমার সার্ভিস এবং সাধারণ সোশ্যাল মিডিয়া প্রচারের খরচ প্রথম পক্ষ তার কমিশন থেকে বহন করবে।"]}, {"h": "৫. প্রথম পক্ষের দায়িত্ব", "items": ["ওয়েবসাইটে বইয়ের পেজ তৈরি, অর্ডার গ্রহণ, পেমেন্ট গ্রহণ, প্যাকেজিং ও কুরিয়ারে পাঠানো।", "কাস্টমারের প্রশ্ন ও অভিযোগের দ্রুত উত্তর দেওয়া।", "প্রতি মাসের বিক্রির বিস্তারিত রিপোর্ট (বইয়ের নাম, সংখ্যা, বিক্রয়মূল্য, অবশিষ্ট স্টক) দ্বিতীয় পক্ষকে দেওয়া।", "দ্বিতীয় পক্ষের নাম, সুনাম ও বইয়ের বিষয়বস্তুর মর্যাদা রক্ষা করে প্রচার করা।"]}, {"h": "৬. দ্বিতীয় পক্ষের দায়িত্ব", "items": ["চাহিদা অনুযায়ী পর্যাপ্ত বই সময়মতো সরবরাহ করা।", "বইয়ের কভার, ছবি, বিবরণ ও লেখকের পরিচিতি প্রচারে ব্যবহারের অনুমতি দেওয়া।", "বইয়ের বিষয়বস্তু ও মেধাস্বত্ব সংক্রান্ত সকল দায় দ্বিতীয় পক্ষের।"]}, {"h": "৭. পেইড বিজ্ঞাপন", "items": ["ফেসবুক বা অন্য মাধ্যমে টাকা দিয়ে বিজ্ঞাপন (পেইড অ্যাড) চালানোর খরচ এই চুক্তির কমিশনের অন্তর্ভুক্ত নয়। প্রয়োজন হলে উভয় পক্ষের লিখিত সম্মতিতে বাজেট ও খরচ ভাগের হার আলাদাভাবে ঠিক করা হবে।"]}, {"h": "৮. হিসাব ও টাকা পরিশোধ", "items": ["প্রতি মাসের বিক্রির হিসাব পরের মাসের **১০ (দশ) তারিখের** মধ্যে রিপোর্টসহ চূড়ান্ত করা হবে এবং কমিশন বাদ দিয়ে দ্বিতীয় পক্ষের প্রাপ্য টাকা তার ব্যাংক অ্যাকাউন্ট বা বিকাশ নম্বরে পাঠানো হবে।", "কাস্টমার বিকাশ বা অন্য অনলাইন মাধ্যমে অগ্রিম পরিশোধ করার পরই অর্ডার বিক্রি হিসেবে গণ্য হবে। ক্যাশ অন ডেলিভারিতে বই বিক্রি করা হবে না।"]}, {"h": "৯. রিটার্ন ও ত্রুটিপূর্ণ বই", "items": ["কাস্টমার অর্ডার বাতিল করলে বা পার্সেল ফেরত এলে বই আবার স্টকে যোগ হবে। এর কুরিয়ার খরচ প্রথম পক্ষ বহন করবে।", "ছাপা বা বাঁধাইয়ের ত্রুটির কারণে কাস্টমার বই ফেরত দিলে দ্বিতীয় পক্ষ বইটি বদলে দেবেন।"]}, {"h": "১০. মেধাস্বত্ব", "items": ["বইয়ের লেখা, কভার ও নামের সকল মেধাস্বত্ব দ্বিতীয় পক্ষের। প্রথম পক্ষ শুধু বিক্রয় ও প্রচারের উদ্দেশ্যে এগুলো ব্যবহার করবে।", "ওয়েবসাইট, অর্ডার সিস্টেম ও কাস্টমার তালিকার মালিকানা প্রথম পক্ষের। চুক্তি শেষ হলেও প্রথম পক্ষ কাস্টমারের তথ্য অন্য কোনো কাজে অপব্যবহার করবে না।"]}, {"h": "১১. মেয়াদ ও নবায়ন", "items": ["এই চুক্তি স্বাক্ষরের তারিখ থেকে **১২ (বারো) মাস** কার্যকর থাকবে। উভয় পক্ষ সম্মত হলে একই শর্তে বা নতুন শর্তে নবায়ন করা যাবে।"]}, {"h": "১২. চুক্তি বাতিল", "items": ["যেকোনো পক্ষ **৩০ (ত্রিশ) দিনের** লিখিত নোটিশ দিয়ে চুক্তি বাতিল করতে পারবেন।", "বাতিলের পর **১৫ (পনেরো) দিনের** মধ্যে চূড়ান্ত হিসাব নিষ্পত্তি হবে এবং অবিক্রীত সব বই দ্বিতীয় পক্ষকে ফেরত দেওয়া হবে।"]}, {"h": "১৩. বিরোধ নিষ্পত্তি", "items": ["চুক্তি নিয়ে কোনো মতবিরোধ হলে উভয় পক্ষ আন্তরিক আলোচনার মাধ্যমে ইসলামী ন্যায়নীতির আলোকে তা মীমাংসা করবেন। আলোচনায় সমাধান না হলে বাংলাদেশের প্রচলিত আইন অনুযায়ী নিষ্পত্তি হবে।"]}, {"h": "১৪. অন্যান্য", "items": ["এই চুক্তির কোনো পরিবর্তন বা সংযোজন উভয় পক্ষের লিখিত সম্মতিতে হবে।", "উভয় পক্ষ সম্মত যে, এই চুক্তিতে ইলেকট্রনিক উপায়ে দেওয়া স্বাক্ষর হাতে করা স্বাক্ষরের সমান গ্রহণযোগ্য বলে গণ্য হবে।"]}];
+const BN = s => String(s).replace(/\d/g, d => "০১২৩৪৫৬৭৮৯"[d]);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+const $ = s => document.querySelector(s);
+const app = $("#app");
+const BOOKS = ["তাকাফুল (ইসলামী বীমা)","ইসলামের উত্তরাধিকার আইন","ব্যাংকিং খাতে খেলাপি ঋণ: সমস্যা ও উত্তরণ উপায়","ইসলামের অর্থব্যবস্থা","ইসলামী অর্থনীতির সহজ পাঠ","ইসলামী ক্রয়-বিক্রয়ের প্রাথমিক পাঠ","কিতাবুল বুয়ু","যাকাতের আধুনিক প্রয়োগ","Building Islamic Finance"];
+const API = "https://script.google.com/macros/s/AKfycbyxp9iWokSDr1mxSOvag5gJfaKq6pWKQJVix_k65oeXdXRXcCRFJR1zpU7qBuxgvNj1jw/exec";
+async function call(body){
+  let r; try { r = await fetch(API, { method: "POST", body: JSON.stringify(body) }); } catch (e) { throw new Error("ইন্টারনেট সংযোগে সমস্যা। একটু পরে আবার চেষ্টা করুন।"); }
+  let j; try { j = await r.json(); } catch (e) { throw new Error("সার্ভার থেকে উত্তর পাওয়া যায়নি। আবার চেষ্টা করুন।"); }
+  if (!j.ok) throw new Error(j.error || "ত্রুটি হয়েছে"); return j.data;
+}
+function run(fn, ...a){
+  if (fn === "adminCreate") return call({ action: "create", k: a[0], data: a[1] });
+  if (fn === "adminList") return call({ action: "list", k: a[0] });
+  if (fn === "getAgreement") return call({ action: "get", id: a[0] });
+  if (fn === "signAgreement") return call({ action: "sign", id: a[0], data: a[1] });
+}
+
+/* ---------- signature widget ---------- */
+function sigWidget(host){
+  host.innerHTML = `<div class="tabs"><button type="button" class="on" data-t="draw">✍️ আঙুল/মাউস দিয়ে সাইন</button><button type="button" data-t="up">🖼️ সাইনের ছবি আপলোড</button></div>
+  <div data-p="draw"><div class="pad"><canvas></canvas><div class="hint">এখানে সাইন করুন</div></div>
+  <div style="display:flex;justify-content:flex-end;margin-top:6px"><button type="button" class="btn l" data-clear style="padding:6px 12px;font-size:14px">মুছে আবার করুন</button></div></div>
+  <div data-p="up" hidden><label class="up"><input type="file" accept="image/*" hidden><span>সাদা কাগজে সাইন করে ছবি তুলুন, তারপর এখানে চাপুন</span><img alt="" hidden></label></div>`;
+  let mode = "draw", drawn = false, upData = null;
+  const cv = host.querySelector("canvas"), ctx = cv.getContext("2d"), hint = host.querySelector(".hint");
+  const fit = () => { const r = cv.getBoundingClientRect(), d = window.devicePixelRatio || 1; const old = drawn ? cv.toDataURL() : null;
+    cv.width = r.width * d; cv.height = r.height * d; ctx.setTransform(d,0,0,d,0,0); ctx.lineWidth = 2.6; ctx.lineCap = "round"; ctx.lineJoin = "round"; ctx.strokeStyle = "#0b1f4d";
+    if (old) { const im = new Image(); im.onload = () => ctx.drawImage(im, 0, 0, r.width, r.height); im.src = old; } };
+  setTimeout(fit, 30); window.addEventListener("resize", fit);
+  let last = null;
+  const pos = e => { const r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+  cv.addEventListener("pointerdown", e => { cv.setPointerCapture(e.pointerId); last = pos(e); ctx.beginPath(); ctx.arc(last[0], last[1], 1.2, 0, 7); ctx.fillStyle = "#0b1f4d"; ctx.fill(); drawn = true; hint.hidden = true; });
+  cv.addEventListener("pointermove", e => { if (!last) return; const p = pos(e); ctx.beginPath(); ctx.moveTo(last[0], last[1]); ctx.lineTo(p[0], p[1]); ctx.stroke(); last = p; });
+  ["pointerup","pointercancel","pointerleave"].forEach(ev => cv.addEventListener(ev, () => last = null));
+  host.querySelector("[data-clear]").onclick = () => { ctx.clearRect(0, 0, cv.width, cv.height); drawn = false; hint.hidden = false; };
+  host.querySelectorAll("[data-t]").forEach(b => b.onclick = () => { mode = b.dataset.t; host.querySelectorAll("[data-t]").forEach(x => x.classList.toggle("on", x === b));
+    host.querySelector('[data-p="draw"]').hidden = mode !== "draw"; host.querySelector('[data-p="up"]').hidden = mode !== "up"; if (mode === "draw") setTimeout(fit, 20); });
+  host.querySelector("input[type=file]").onchange = e => { const f = e.target.files[0]; if (!f) return; const rd = new FileReader();
+    rd.onload = () => { const im = new Image(); im.onload = () => { const s = Math.min(1, 900 / im.width, 400 / im.height), c = document.createElement("canvas");
+      c.width = im.width * s; c.height = im.height * s; const x = c.getContext("2d"); x.fillStyle = "#fff"; x.fillRect(0, 0, c.width, c.height); x.drawImage(im, 0, 0, c.width, c.height);
+      upData = c.toDataURL("image/png"); const pv = host.querySelector(".up img"); pv.src = upData; pv.hidden = false; }; im.src = rd.result; }; rd.readAsDataURL(f); };
+  return { get(){ if (mode === "up") return upData;
+    if (!drawn) return null; const t = document.createElement("canvas"); t.width = cv.width; t.height = cv.height; const x = t.getContext("2d");
+    x.fillStyle = "#fff"; x.fillRect(0, 0, t.width, t.height); x.drawImage(cv, 0, 0); return t.toDataURL("image/png"); } };
+}
+
+/* ---------- agreement renderer ---------- */
+function agreementHTML(a, second){
+  const fill = t => t.replace(/\{\{C\}\}/g, BN(a.commission)).replace(/\{\{R\}\}/g, BN(100 - a.commission));
+  const s = second || {};
+  return `<div class="doc"><h1>বই বিক্রয় ও পরিবেশন চুক্তিপত্র</h1><p class="c sub">(কমিশন ভিত্তিক অনলাইন বিক্রয় চুক্তি)</p>
+  <p class="c"><b>চুক্তি নম্বর:</b> ${esc(a.no)} &nbsp; · &nbsp; <b>তারিখ:</b> ${esc(a.date)}</p>
+  <p>এই চুক্তিপত্রটি নিম্নলিখিত দুই পক্ষের মধ্যে, উভয় পক্ষের স্বেচ্ছায় ও সজ্ঞানে সম্পাদিত হলো:</p>
+  <div class="parties"><div><b style="background:var(--navy)">প্রথম পক্ষ (বিক্রয় প্রতিনিধি)</b>এ এইচ মার্কেটিং এজেন্সি<br>খ-৮১/৪, তালেরটেক, খিলক্ষেত, ঢাকা-১২২৯<br>ফোন: ০১৬৪৪-৩৯৬২০৩<br>প্রতিনিধি: ${esc(a.firstName)}${a.firstTitle ? " (" + esc(a.firstTitle) + ")" : ""}</div>
+  <div><b style="background:var(--violet)">দ্বিতীয় পক্ষ (লেখক ও বইয়ের মালিক)</b>${esc(s.name || a.secondName)}${s.phone ? "<br>মোবাইল: " + esc(s.phone) : ""}${s.nid ? "<br>NID: " + esc(s.nid) : ""}${s.address ? "<br>ঠিকানা: " + esc(s.address) : ""}</div></div>
+  ${BOOT.sections.map(sec => `<h3>${esc(sec.h)}</h3>` + sec.items.map((t, i) => `<p><span class="n">${esc(sec.h.split(".")[0])}.${BN(i + 1)}</span>${md(fill(t))}</p>`).join("")).join("")}
+  <h3>তফসিল-ক: বইয়ের তালিকা ও মূল্য</h3>
+  <table><tr><th>ক্রম</th><th>বইয়ের নাম</th><th>খুচরা মূল্য (টাকা)</th><th>প্রথম সরবরাহ (কপি)</th></tr>
+  ${a.books.filter(b => b.name).map((b, i) => `<tr><td>${BN(i + 1)}</td><td>${esc(b.name)}</td><td>${b.price ? BN(esc(b.price)) : "—"}</td><td>${b.qty ? BN(esc(b.qty)) : "—"}</td></tr>`).join("")}</table></div>`;
+}
+
+/* ---------- admin ---------- */
+function admin(){
+  const today = new Date(), d = BN(String(today.getDate()).padStart(2,"0") + "/" + String(today.getMonth()+1).padStart(2,"0") + "/" + today.getFullYear());
+  app.innerHTML = `<div class="card"><h2>নতুন চুক্তিপত্র তৈরি করুন (প্রথম পক্ষ)</h2>
+  <div class="row"><div class="f"><label>চুক্তি নম্বর</label><input id="no" value="AHM-AGR-2026-002"></div><div class="f"><label>তারিখ</label><input id="date" value="${d}"></div></div>
+  <div class="row"><div class="f"><label>আপনার নাম (প্রতিনিধি)</label><input id="fn" placeholder="যেমন: মোঃ আবু হুরায়রা"></div><div class="f"><label>পদবি</label><input id="ft" value="প্রোপ্রাইটর"></div></div>
+  <div class="row"><div class="f"><label>দ্বিতীয় পক্ষের নাম</label><input id="sn" value="মুফতি আব্দুল্লাহ মাসুম, CSAA"></div><div class="f"><label>আপনার কমিশন (%)</label><input id="cm" type="number" min="1" max="90" value="30"></div></div>
+  <h3>তফসিল-ক: বইয়ের দাম ও সংখ্যা <small class="sub">(ফাঁকা রাখলে "—" দেখাবে)</small></h3>
+  <table id="bk"><tr><th>বইয়ের নাম</th><th style="width:22%">দাম (টাকা)</th><th style="width:22%">কপি</th></tr>
+  ${BOOKS.map(n => `<tr><td><input value="${esc(n)}"></td><td><input inputmode="numeric"></td><td><input inputmode="numeric"></td></tr>`).join("")}</table>
+  <h3>আপনার স্বাক্ষর</h3><div id="sig"></div>
+  <div class="err" id="er"></div>
+  <button class="btn p" id="go">সাইন করে ওনার জন্য লিংক তৈরি করুন</button></div>
+  <div class="card" id="out" hidden></div>
+  <div class="card"><h2>আগের চুক্তিপত্রগুলো</h2><div id="list" class="small">লোড হচ্ছে…</div></div>`;
+  const sig = sigWidget($("#sig"));
+  loadList();
+  $("#go").onclick = async () => {
+    const s = sig.get(); if (!s) { $("#er").textContent = "আগে স্বাক্ষর করুন।"; return; }
+    if ($("#fn").value.trim().length < 2) { $("#er").textContent = "আপনার নাম লিখুন।"; $("#fn").focus(); return; }
+    $("#er").textContent = ""; $("#go").disabled = true; $("#go").textContent = "তৈরি হচ্ছে…";
+    const books = [...document.querySelectorAll("#bk tr")].slice(1).map(tr => { const i = tr.querySelectorAll("input"); return { name: i[0].value.trim(), price: i[1].value.trim(), qty: i[2].value.trim() }; });
+    try {
+      const r = await run("adminCreate", BOOT.k, { no: $("#no").value.trim(), date: $("#date").value.trim(), firstName: $("#fn").value.trim(), firstTitle: $("#ft").value.trim(), secondName: $("#sn").value.trim(), commission: $("#cm").value, books, firstSig: s });
+      const msg = "আসসালামু আলাইকুম, এ এইচ মার্কেটিং এজেন্সির সাথে বই বিক্রয় চুক্তিপত্রটি নিচের লিংকে আছে। পড়ে নিচে সাইন করে দিন, জাযাকাল্লাহ।\n" + r.link;
+      $("#out").hidden = false;
+      $("#out").innerHTML = `<div class="ok"><div class="t">✓</div><b>চুক্তিপত্র তৈরি হয়েছে, আপনার সাইন বসানো হয়েছে।</b><p class="small">এই লিংকটি ওনাকে পাঠান — উনি খুলে সাইন করলেই PDF তৈরি হয়ে আপনার ইমেইল ও Google Drive-এ চলে আসবে।</p>
+        <div class="link">${esc(r.link)}</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><button class="btn l" id="cp">লিংক কপি করুন</button><a class="btn g" target="_blank" href="https://wa.me/?text=${encodeURIComponent(msg)}">হোয়াটসঅ্যাপে পাঠান</a></div></div>`;
+      $("#cp").onclick = () => navigator.clipboard.writeText(r.link).then(() => $("#cp").textContent = "কপি হয়েছে ✓");
+      $("#go").textContent = "আরেকটি চুক্তি তৈরি করুন"; $("#go").disabled = false; loadList();
+      $("#out").scrollIntoView({ behavior: "smooth" });
+    } catch (e) { $("#er").textContent = e.message; $("#go").disabled = false; $("#go").textContent = "সাইন করে ওনার জন্য লিংক তৈরি করুন"; }
+  };
+}
+async function loadList(){
+  try { const L = await run("adminList", BOOT.k);
+    $("#list").innerHTML = L.length ? `<table class="list"><tr><th>নম্বর</th><th>দ্বিতীয় পক্ষ</th><th>অবস্থা</th><th></th></tr>${L.map(r => `<tr><td>${esc(r.no)}</td><td>${esc(r.secondName)}</td><td>${r.status === "signed" ? "✅ সাইন হয়েছে" : "⏳ অপেক্ষায়"}</td><td>${r.pdfUrl ? `<a target="_blank" href="${esc(r.pdfUrl)}">PDF</a>` : `<a target="_blank" href="/sign/?id=${esc(r.id)}">লিংক</a>`}</td></tr>`).join("")}</table>` : "এখনো কোনো চুক্তি নেই।";
+  } catch (e) { $("#list").textContent = e.message; }
+}
+
+/* ---------- second party ---------- */
+async function sign(){
+  let a; try { a = await run("getAgreement", BOOT.id); } catch (e) { app.innerHTML = `<div class="card c"><h2>দুঃখিত</h2><p>${esc(e.message)}</p></div>`; return; }
+  if (a.status === "signed") { app.innerHTML = `<div class="card">${agreementHTML(a, a.second)}</div><div class="card ok"><div class="t">✓</div><b>এই চুক্তিপত্রে স্বাক্ষর সম্পন্ন হয়েছে।</b><p><a class="btn g" target="_blank" href="${esc(a.pdfUrl)}">স্বাক্ষরিত PDF দেখুন / ডাউনলোড</a></p></div>`; return; }
+  app.innerHTML = `<div class="card"><p class="small c">নিচের চুক্তিপত্রটি পড়ুন, তারপর একেবারে নিচে আপনার তথ্য দিয়ে সাইন করুন।</p>${agreementHTML(a)}
+   <h3>প্রথম পক্ষের স্বাক্ষর</h3><img class="sigimg" src="${a.firstSig}" alt="প্রথম পক্ষের স্বাক্ষর"><div class="small">${esc(a.firstName)} — এ এইচ মার্কেটিং এজেন্সি</div></div>
+  <div class="card" id="form"><h2>দ্বিতীয় পক্ষের তথ্য ও স্বাক্ষর</h2>
+   <div class="row"><div class="f"><label>পূর্ণ নাম</label><input id="nm" value="${esc(a.secondName)}"></div><div class="f"><label>মোবাইল নম্বর</label><input id="ph" inputmode="tel" placeholder="01XXXXXXXXX"></div></div>
+   <div class="row"><div class="f"><label>NID নম্বর <small>(ঐচ্ছিক)</small></label><input id="nid" inputmode="numeric"></div><div class="f"><label>ইমেইল <small>(ঐচ্ছিক — PDF কপি পাবেন)</small></label><input id="em" type="email"></div></div>
+   <div class="f"><label>ঠিকানা <small>(ঐচ্ছিক)</small></label><input id="ad"></div>
+   <div class="f"><label>টাকা গ্রহণের তথ্য <small>(বিকাশ নম্বর বা ব্যাংক অ্যাকাউন্ট)</small></label><input id="pt" placeholder="যেমন: বিকাশ 01XXXXXXXXX"></div>
+   <h3>আপনার স্বাক্ষর</h3><div id="sig"></div>
+   <label class="chk"><input type="checkbox" id="ag"><span>আমি চুক্তিপত্রের সকল শর্ত পড়েছি, বুঝেছি এবং স্বেচ্ছায় সম্মত হয়ে স্বাক্ষর করছি।</span></label>
+   <div class="err" id="er"></div>
+   <button class="btn p" id="go">স্বাক্ষর করে জমা দিন</button>
+   <p class="small c" style="margin-top:8px">জমা দেওয়ার পর দুই পক্ষের স্বাক্ষরসহ PDF তৈরি হবে।</p></div>`;
+  const sig = sigWidget($("#sig"));
+  $("#go").onclick = async () => {
+    const s = sig.get(), er = $("#er");
+    if ($("#nm").value.trim().length < 2) { er.textContent = "নাম লিখুন।"; return; }
+    if ($("#ph").value.replace(/\D/g, "").length < 10) { er.textContent = "মোবাইল নম্বর লিখুন।"; $("#ph").focus(); return; }
+    if (!s) { er.textContent = "স্বাক্ষর করুন (আঁকুন বা ছবি আপলোড করুন)।"; return; }
+    if (!$("#ag").checked) { er.textContent = "সম্মতির ঘরে টিক দিন।"; return; }
+    er.textContent = ""; $("#go").disabled = true; $("#go").textContent = "জমা হচ্ছে… PDF তৈরি হচ্ছে (৩০ সেকেন্ড পর্যন্ত লাগতে পারে)";
+    try {
+      const r = await run("signAgreement", BOOT.id, { name: $("#nm").value, phone: $("#ph").value, nid: $("#nid").value, email: $("#em").value, address: $("#ad").value, payto: $("#pt").value, sig: s, agree: true });
+      $("#form").outerHTML = `<div class="card ok"><div class="t">✓</div><h2 style="margin:0">জাযাকাল্লাহ খাইরান! স্বাক্ষর সম্পন্ন হয়েছে।</h2><p>চুক্তিপত্রের PDF তৈরি হয়েছে।</p><a class="btn g" target="_blank" href="${esc(r.pdfUrl)}">স্বাক্ষরিত PDF দেখুন / ডাউনলোড</a></div>`;
+      window.scrollTo(0, document.body.scrollHeight);
+    } catch (e) { er.textContent = e.message; $("#go").disabled = false; $("#go").textContent = "স্বাক্ষর করে জমা দিন"; }
+  };
+}
+
+if (BOOT.mode === "admin") admin();
+else if (BOOT.mode === "sign") sign();
+else app.innerHTML = `<div class="card c"><h2>এ এইচ মার্কেটিং এজেন্সি</h2><p class="sub">চুক্তিপত্রে সাইন করতে আপনাকে পাঠানো লিংকটি ব্যবহার করুন।</p><p><a href="https://www.itsahmarketing.com/">www.itsahmarketing.com</a></p></div>`;
+
+</script>
+</body>
+</html>
