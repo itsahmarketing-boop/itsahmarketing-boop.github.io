@@ -1,6 +1,7 @@
+@font-face{font-family:"UN Bangla";src:url("/fonts/UNBangla-Regular.ttf") format("truetype");font-weight:400;font-display:swap}@font-face{font-family:"UN Bangla";src:url("/fonts/UNBangla-Bold.ttf") format("truetype");font-weight:600 800;font-display:swap}
 :root{--p:#4F46E5;--d:#0F172A;--h:#38BDF8}
-*{box-sizing:border-box}body{margin:0;font-family:Poppins,"Anek Bangla",sans-serif;color:#0f172a;background:#f8fafc;line-height:1.6}
-.bn{font-family:"Anek Bangla",sans-serif}
+*{box-sizing:border-box}body{margin:0;font-family:"UN Bangla",Poppins,sans-serif;color:#0f172a;background:#f8fafc;line-height:1.6}
+.bn{font-family:"UN Bangla",sans-serif}
 header{background:linear-gradient(135deg,var(--d),#1e1b4b 60%,var(--p));color:#fff;padding:22px 6vw 80px}
 nav{display:flex;justify-content:space-between;align-items:center}.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;letter-spacing:.5px}
 .lg{width:44px;height:44px;border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,.85)}

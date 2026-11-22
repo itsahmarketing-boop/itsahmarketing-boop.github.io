@@ -2,7 +2,7 @@
    ব্যবহার: <div class="ahm-feed" data-brand="ব্র্যান্ড-কি"></div><script src="https://itsahmarketing-boop.github.io/widget.js" async></script> */
 (function () {
   var APP = "https://script.google.com/macros/s/AKfycbxU3xAnzPlI9-0BO_MAcJVt5gMT2_-m1ZtgiiqBO_HwlMkBkBeB_dFu8jpzW1kE9z6ImQ/exec";
-  var CSS = ":host{all:initial;display:block;font-family:'Hind Siliguri','Noto Sans Bengali',system-ui,sans-serif;color:#111827}"
+  var CSS = ":host{all:initial;display:block;font-family:'UN Bangla','Hind Siliguri',system-ui,sans-serif;color:#111827}"
     + ".g{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}"
     + ".c{background:#fff;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;transition:box-shadow .2s}"
     + ".c:hover{box-shadow:0 14px 34px -20px rgba(15,23,42,.4)}"
